@@ -1,0 +1,158 @@
+#sponser{
+    padding: 0 8rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#sponser>div:first-child h2{
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(90, 88, 88);
+}
+#sponser>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#sponser>div:nth-child(2)>img{
+    width: 24%;
+}
+#sponser>div:nth-child(2)>h3{
+    font-weight: 500;
+    color: gray;
+
+}
+#sponser>div:nth-child(3)>h2{
+    font-weight: 400;
+    color: gray;
+    padding-top: 2rem;
+}
+
+#feature{
+    padding: 3rem 7.5rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#feature>div{
+    padding: .8rem;
+    width: 230px ;
+    height: 210px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#feature>div>h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(82, 80, 80);
+    margin: 10px 0;
+}
+#feature>div>div{
+    font-size: .9rem;
+    font-weight: 600;
+    color: gray;
+}
+
+#extra{
+    padding: 2rem 8rem;
+    text-align: center;
+}
+
+#extra>div{
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: rgb(90, 88, 88);
+}
+
+#extra>button{
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background: #f53838;
+    color: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+#extra>button:hover{
+    background: #b81e1e;
+}
+
+#featured{
+    padding:0 8rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+main>div:last-child{
+    padding: 0 8rem;
+    background: #ececec;
+}
+
+.yum{
+    padding: 2rem 7.5rem;
+}
+.yum>div{
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.yum>div>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.yum>div>div:first-child h2{
+    margin: 2px;
+    font-weight: 400;
+    color: gray;
+}
+.yum>div>div:first-child>ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.yum>div>div:first-child>ul a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.yum>div>div+div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+.yum>div>div:nth-child(2)>div{
+    font-size: 12px;
+    color: gray;
+}
+.yum>div>div:nth-child(2)>div>p{
+    font-size: 1rem;
+    margin: 4px;
+    font-weight: 500;
+    color: gray;
+    /* width: 300px;
+    border: 1px solid red; */
+}
+
+.yum>div>div:nth-child(2)>div>div{
+    height: 200px;
+}
+.yum>div>div:nth-child(2)>div>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 162, 162);
+
+}
