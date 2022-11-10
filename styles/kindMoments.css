@@ -3,20 +3,20 @@
     background-color: #f0f0f0 ;
      width: 100%;
      height: 300px;
-     border: 1px solid red;
+     border: 0px solid red;
  }
  #top>div{
      display: flex;
      width: 80%;
      height: 300px;
-     border: 1px solid red;
+     border: 0px solid red;
      margin-left: 10%;
  }
  
  #top>div>div:nth-child(1){
      width: 80%;
      height: 100%;
-     border: 1px solid black;
+     border: 0px solid black;
     
      
  }
@@ -24,10 +24,13 @@
  #top>div>div:nth-child(2){
      width: 20%;
      height: 50%;
-     border: 1px solid green;
+     border: 0px solid green;
      margin-top: 10%;
      border-radius: 10px;
      background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     padding-top: 10px;
+     padding-left: 10px;
  }
  #top>div>div:nth-child(2)>h3{
      margin-top: 0;
@@ -39,7 +42,7 @@
      margin: auto;
      width: 80%;
      height: 20%;
-     border: 1px solid red;
+     border: 0px solid red;
      border-radius: 5px;
      background-color: red;
  }
@@ -58,7 +61,7 @@
      justify-content: space-between;
      width: 80%;
      height: 40px;
-     border: 1px solid red;
+     border: 0px solid red;
      margin-top: 3%;
      margin-left: 10%;
  }
@@ -68,7 +71,7 @@
      justify-content: space-between;
      width: 45%;
      height: 100%;
-     border: 1px solid blue;
+     border: 0px solid blue;
  }
  #mid>div:nth-child(1)>div{
      display: flex;
@@ -76,7 +79,7 @@
      align-items: center;
      width: 30%;
      height: 100%;
-     border: 1px solid blue;
+     border: 1px solid gray;
      border-radius: 5px;
      background-color: #f0f0f0 ;
  }
@@ -91,7 +94,7 @@
      align-items: center;
      width: 30%;
      height: 100%;
-     border: 1px solid blue;
+     border: 1px solid gray;
      border-radius: 5px;
  }
  #mid>div:nth-child(2)>div:nth-child(3){
@@ -102,28 +105,28 @@
  
  
  
- #pagination{
+ .pagination{
      display: flex;
      justify-content: space-between;
      width: 80%;
      height: 40px;
-     border: 1px solid red;
+     border: 0px solid red;
      margin-top: 2%;
      margin-left: 10%;
  }
- #btn{
+ .btn, .lower_btn{
      width: 40%;
      height: 60%;
-     border: 1px solid red;
+     border: 0px solid red;
      display: flex;
      justify-content: space-around;
      align-items: center;
      margin-top: 0.5%;
  }
- #pagination>div:nth-child(2){
+ .pagination>div:nth-child(2){
      width: 10%;
      height: 100%;
-     border: 1px solid red;
+     border: 0px solid red;
      border-radius: 5px;
      background-color: red;
      color: white;
@@ -136,42 +139,114 @@
  
  
  #body{
-     display: flex;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
      width: 80%;
-     height: 600px;
-     border: 1px solid black;
+     gap: 40px;
+     border: 0px solid black;
      margin-top: 2%;
      margin-left: 10%;
  }
  .card{
-     width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      height: 400px;
-     border: 1px solid red;
+     border: 0px solid red;
+     border-radius: 10px;
+     padding-top: 5px;
+     padding-bottom: 5px;
  }
  .card>div:nth-child(1){
      display: flex;
      width: 100%;
      height: 15%;
-     border: 1px solid red;
+     border: 0px solid red;
  }
- .card>div:nth-child(1)>div{
-     width: 30%;
-     height: 100%;
-     border: 1px solid red;
- }
+
+
+ .card>div:nth-child(1)>div:nth-child(1){
+    width: 20%;
+    height: 100%;
+    border: 0px solid red;
+}
+.card>div:nth-child(1)>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 54%;
+    height: 100%;
+    border: 0px solid red;
+   
+}
+.view{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 60%;
+    border: 0px solid black;
+}
+.card>div:nth-child(1)>div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 26%;
+    height: 100%;
+    border: 0px solid red;
+}
+
+
  .card>div:nth-child(2){
      width: 100%;
      height: 65%;
-     border: 1px solid red;
+     border: 0px solid red;
  }
  .card>div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
      width: 100%;
      height: 20%;
-     border: 1px solid red;
+     border: 0px solid red;
  }
  .png{
-     width: 30%;
+    border-radius: 50%;
+     width: 100%;
+     height: 100%;
  }
  .image{
      width: 100%;
+     height: 100%;
  }
+
+
+
+ #mid_body{
+    width: 80%;
+    height: 300px;
+    border: 0px solid red;
+    margin-left: 10%;
+    margin-top: 2%;
+ }
+ #mid_body>img{
+    width: 100%;
+    height: 100%;
+ }
+
+
+
+ #lower_body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    gap: 30px;
+    border: 0px solid black;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+#KM_footer{
+    margin-top: 2%;
+}

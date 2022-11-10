@@ -89,3 +89,6 @@ big.map(function (ele) {
 	div.append(img);
 	document.getElementById("downslide").append(div);
 });
+
+
+
