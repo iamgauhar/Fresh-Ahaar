@@ -117,3 +117,92 @@ footer{
     color: #fff;
     padding: 10px;
 }
+
+#login_form{
+    width: 520px;
+    background: #fff;
+    height: 620px;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: .3s;
+}
+#login_form>div>*{
+    /* border: 1px solid; */
+}
+#login_form>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#login_form>div a{
+    text-decoration: none;
+    color: rgb(104, 100, 100);
+}
+
+#cross{
+    float: right;
+    cursor: pointer;
+}
+.first{
+    text-align: center;
+}
+.first>div+div h2{
+    font-weight: 500;
+    color: gray;
+    margin: 0;
+
+}
+.first>div+div p{
+    color: gray;
+    margin: 0px;
+}
+.first>div:first-child{
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+.first>div:first-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.same{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    padding: 0 1rem;
+    border: 1px solid rgb(211, 208, 208);
+    margin:0 1rem;
+    border-radius: 10px;
+}
+
+.same>a{
+    text-decoration: none;
+}
+
+.same>div:first-child{
+    width: 350px;
+    /* height: 100px; */
+}
+.same>div:first-child img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
