@@ -1,0 +1,267 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#head
+{
+    width: 100%;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 2% 0;
+    
+}
+
+#head h1{
+    color: rgb(48, 48, 48);
+    width: 80%;
+    margin: auto;
+}
+#head p{
+    text-align: justify;
+    color: rgb(48, 48, 48);
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+}
+
+#head a
+{
+    text-decoration: none;
+}
+#headdiv
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#search_shop
+{
+    padding: 0.5% 1%;
+    font-size: medium;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+    width: 20%;
+}
+#searchCategory
+{
+    padding: 0.5% 1%;
+    font-size: medium;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+    width: 15%;
+    color: grey;
+    margin-left: 3%;
+}
+#SearchLocation {
+    padding: 0.5% 1%;
+    font-size: medium;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+    width: 15%;
+    color: grey;
+    margin-left: 3%;
+}
+#Searchdealsbtn{
+    margin-left: 3%;
+    width: 15%;
+    padding: 0.5% 1%;
+    font-size: 18px;
+    color: white;
+    background-color: #f53838;
+    border: none;
+    border-radius: 5px;
+}
+#browsebtn
+{
+    margin-left: 2%;
+    width: 20%;
+    padding: 0.5% 1%;
+    font-size: 18px;
+    color: white;
+    background-color: #04be5a;
+    border: none;
+    border-radius: 5px;
+}
+#hp2
+{
+    margin-top: 2%;
+}
+#advertise
+{
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+span
+{
+    color: grey;
+}
+#container
+{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+#card
+{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container  img{
+width: 100%;
+border-radius: 15px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+cursor: pointer;
+}
+#nameandlocation
+{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 5%;
+}
+#h
+{
+    background-color: black;
+    opacity: 50%;
+    color: white;
+    margin-top: -60px;
+    text-align: center;
+    color: rgba(red, green, blue, 10);
+    padding: 1%;
+    
+}
+#name
+{
+    font-size: 22px;
+    margin-top: -10px;
+    color: rgb(121, 121, 121);
+    cursor: pointer;
+    
+}
+#location
+{
+    margin-left: 5%;
+    margin-top: -5px;
+    
+    color: rgb(121,121,121);
+}
+#desc
+{
+    color: rgb(49, 49, 49);
+    margin-top: -10px;
+    padding: 0 5%;
+}
+#lastdivcard
+{
+    display: flex;
+    text-align: center;
+    padding: 2%;
+    align-items: center;
+    margin-top: -20px;
+}
+
+#d1 img{
+    width: 30%;
+    
+    border-radius: 0;
+}
+#d1 {
+    width: 25%;
+    height: 100%;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+#d2{
+    width: 50%;
+    height: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#d3
+{
+    width: 25%;
+    height: 100%;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+#h3
+{
+    color: red;
+    font-size: 25px;
+    margin-top: -10px;
+}
+#h2
+{
+    font-weight: 300;
+    font-size: 20px;
+}
+#h1
+{
+    font-weight: 100;
+    color: grey;
+    margin-top: -10px;
+}
+#btnandstars
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+#btnandstars > button
+{
+    
+    background-color: #f53838;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+#btnandstars img {
+    width: 30%;
+    height: 10%;
+    cursor: pointer;
+}
+#btnandstars > button:hover{
+    cursor: pointer;
+    background-color: #971e1e;
+}
+#lastimg
+{
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    background-color: #f0f0f0;
+}
+#lastdiv
+{
+    background-color: #f0f0f0;
+    margin-top: 2%;
+    margin-bottom:0 ;
+}
+#paginate
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+}
+#paginate button
+{
+    border: none;
+    background-color: rgb(231, 225, 225);
+    margin-left:2% ;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 5px;
+    
+}
+#paginate button:hover{
+background-color: rgb(97, 97, 97);
+}
