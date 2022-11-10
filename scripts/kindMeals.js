@@ -354,7 +354,11 @@ page3.addEventListener("click", () => {
     // window.location.href = "kindMeals.html"
 
     scroll(0, 0)
-    git
+    // <<<<<<< HEAD
+    //     git
+    // =======
+
+    // >>>>>>> a95d17ccd0cca3fd6caf13fc8f4cec548a707b10
     append(data3)
 })
 
