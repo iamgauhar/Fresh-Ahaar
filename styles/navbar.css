@@ -203,3 +203,75 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+#member_login{
+    /* width: 450px; */
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: .3s;
+
+}
+#login_cross{
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+#member_login>div{
+    background: #fff;
+    padding: 1.5rem;
+width: 400px;
+border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#member_login>div>form{
+    display: flex;
+    flex-direction: column;
+    padding:0 1rem;
+}
+
+#member_login>div>form input{
+    padding: .6rem;
+    margin: 1rem;
+}
+
+#member_login>div>form button{
+    padding: .6rem;
+    width: 120px;
+    background: #04be5a;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:1rem auto;
+}
+
+#member_login>div>form button:hover{
+    background: #04a851;
+}
+
+#member_login>div>div:first-child{
+    width: 70%;
+    margin: auto;
+
+}
+#member_login a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-size: .8rem;
+}
+#member_login>div>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;text-decoration: none;
+}
+#member_login>div>div:first-child>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cove;
+}

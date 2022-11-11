@@ -1,0 +1,107 @@
+#container>div{
+    padding:0 7.7rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#left{
+    text-align: center;
+    color: gray;
+}
+#left>a>div{
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 206, 206);
+}
+
+#left>a:last-child>div{
+    border: 1px solid rgb(146, 145, 145);
+}
+#left>a{
+    text-decoration: none;
+    
+}
+#left>a>div>div:first-child{
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+
+#left>a>div>div:first-child>img{
+    width: 100%;
+    /* margin: auto; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#right{
+    padding-right: 6rem;
+}
+#right>div>h1{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+#right>div>p{
+    font-size: .9rem;
+}
+
+#right>form{
+    /* border: 1px solid; */
+    /* display: grid;
+    grid-template-columns: 1fr, 3fr; */
+    /* height: 100%; */
+    
+    /* flex-direction: column; */
+}
+#right>form>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#right>form input{
+    padding: .6rem;
+    width: 60%;
+    /* outline: 1px solid gray; */
+    margin: 1rem;
+    border: 1px solid rgb(167, 165, 165);
+    border-radius: 5px;
+}
+#right>form button{
+    padding: .8rem 3.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    color: #fff;
+    border: 0;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background: #F53838;
+}
+
+#right>form button:hover{
+    cursor: pointer;
+    background: #be1010;
+
+}
+
+.banner{
+    background: #e0e0e0;
+    /* padding-top: 2rem 0; */
+}
+
+.banner>div{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    bottom: -4px;
+}
+.banner>div>img{
+    width: 100%;
+}
