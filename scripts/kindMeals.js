@@ -1,8 +1,8 @@
-import { header, footer } from "../components/utility.js";
-let head = document.getElementById("header")
-head.innerHTML = header()
-let KM_footer = document.getElementById('footer');
-KM_footer.innerHTML = footer();
+// import { header, footer } from "../components/utility.js";
+// let head = document.getElementById("header")
+// head.innerHTML = header()
+// let KM_footer = document.getElementById('footer');
+// KM_footer.innerHTML = footer();
 
 
 const data1 = [
