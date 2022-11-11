@@ -1,14 +1,14 @@
 
-import { header, footer } from "../components/utility.js";
+// import { header, footer } from "../components/utility.js";
 
 
 
 
-let navbar = document.getElementById('navbar');
-navbar.innerHTML = header();
+// let navbar = document.getElementById('navbar');
+// navbar.innerHTML = header();
 
-let KM_footer = document.getElementById('KM_footer');
-KM_footer.innerHTML = footer();
+// let KM_footer = document.getElementById('KM_footer');
+// KM_footer.innerHTML = footer();
 
 const createBtn = (btn_container) => {
 
@@ -176,3 +176,4 @@ function imageSlide(delay, image) {
     }, delay)
 }
 
+// mouse hover
