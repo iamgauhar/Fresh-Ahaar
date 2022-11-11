@@ -7,7 +7,7 @@ function header(){
     <div id="login">
         <a href=""><div>Facebook</div></a>
         <a href="#"><div>Email</div></a>
-        <a href="#">Signup</a>
+        <a id="signup" href="#">Signup</a>
     </div>
 </div>
 
@@ -22,7 +22,51 @@ function header(){
         <a href="#"><div>Articles</div></a>
         <a href="#"><div>Help</div></a>
     
-</nav>`
+</nav>
+
+<div id="login_form">
+    <div>
+        <div class="cross">
+            <svg id="cross" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+        </div>
+        <div class="first">
+            <div>
+                <img src="./fresh11.png" alt="LOGO">
+
+            </div>
+            <div>
+                <h2>Join Fresh Ahaar For FREE Now</h2>
+                <p>Please select the type of membership to proceed</p>
+            </div>
+        </div>
+        <a href="#">
+            <div class="second same">
+                <div>
+                    <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+                </div>
+                <div>
+                    <h3>Food Lover</h3>
+                    <p>Join FREE to enjoy yummy deals, share reviews & meet our community of compassionate food lovers.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="third same">
+                <div>
+                    <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+                </div>
+                <div>
+                    <h3>Restaurabt / Shop Owner</h3>
+                    <p>List your food outlet, create exciting vegetarian deals & showcase your delicious menu for FREE. Enjoy our yummy deals, share reviews & meet food lovers too.</p>
+                </div>
+            </div>
+        </a>
+        <div class="four">
+            <div><a href="#">Member Login</a></div>
+            <div><a href="#">forgot password</a></div>
+        </div>
+    </div>
+</div>`
 }
 
 function footer(){
