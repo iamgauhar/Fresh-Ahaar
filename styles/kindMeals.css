@@ -232,6 +232,12 @@ cursor: pointer;
     cursor: pointer;
     background-color: #971e1e;
 }
+
+nav>a:nth-child(2){
+    background: #07884a;
+
+}
+
 #lastimg
 {
     display: block;

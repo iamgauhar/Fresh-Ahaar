@@ -179,7 +179,10 @@
     width:65%;  
     position:relative;
 }
+nav>a:first-child{
+    background: #07884a;
 
+}
 #slideshow #slide2{
     height:100%;
     width:35%

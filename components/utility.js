@@ -14,8 +14,8 @@ function header(){
 <nav>
     
         <a href="index.html"><div>Home</div></a>
-        <a href="#"><div>Meal Deals</div></a>
-        <a href="#"><div id='go_to_kindMoments'>Kind Moments</div></a>
+        <a href="kindMeals.html"><div>Meal Deals</div></a>
+        <a href="kindMoments.html"><div id='go_to_kindMoments'>Kind Moments</div></a>
         <a href="#"><div>Hot Picks</div></a>
         <a href="#"><div>Hot Picks</div></a>
         <a href="#"><div>Directory</div></a>
