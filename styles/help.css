@@ -1,0 +1,43 @@
+#container
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#images
+{
+    width: 25%;
+}
+#text
+{
+    width: 75%;
+    padding: 0 5%;
+    text-align: justify;
+    /* border: 1px solid; */
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+    margin-bottom: 5%;
+}
+.imgdiv
+{
+    
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    padding: 10% 10%;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+}
+.imgdivp
+{
+    
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+}
+.images
+{
+    display: block;
+    margin: auto;
+}
