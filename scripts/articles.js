@@ -1,63 +1,31 @@
 
-//<---------------------------------------------data_business--------------------------------------------->
-let art_data=[
+let art_data_hard_coded=[
     {
         'url':'https://www.kindmeal.my/photos/article/20/20233-l.jpg',
         'title':'Tornado Potatoes',
         'web_name':'by KindMeal.my',
         'description':'Peri Peri Tornado Potato — a fantastic, fun, tasty way to cook potatoes!',
         'date':'11:nov:2022',
+    },
+    {
+        "url": "https://www.kindmeal.my/photos/article/20/20206-l.jpg",
+        "title": " Satay Stir Fry",
+        "web_name": "by KindMeal.my",
+        "description": "Whip up this delicious satay stir fry — quick, protein-packed with delicious peanutty umami flavour!",
+        "date": "02 November 2022"
+    },
+    {
+        "url": "https://www.kindmeal.my/photos/article/20/20204-l.jpg",
+        "title": "",
+        "web_name": "by Compassion Over Killing",
+        "description": "Happy Halloween 👻 Read our newest blog on whether of not the potions from Halloween classic Hocus Pocus are vegan. Plus a list of some great vegan candies and treats:",
+        "date": "01 November 2022"
     }
-   
- 
 ]
 
-class create_articles_data{
-    constructor(url,title,web_name,description,date){
-        this.url=url;
-        this.title=title;
-        this.web_name=web_name;
-        this.description=description;
-        this.date=date;
-    }
- }
-
- let d2= new create_articles_data(`https://www.kindmeal.my/photos/article/20/20230-l.jpg`,`
- Animals Are Not Meals. They''re Living Beings And They Deserve Freedom And Respec..`,
- `by Compassion Over Killing`,`Animals are not meals. They're living beings and they 
- deserve freedom and respect. Leave animals off your plates. #govegan`,
- `08 November 2022`)
-
- 
-
- document.getElementById('create').onclick=() =>{
-    let input_url= document.getElementById('url').value;
-    let input_title= document.getElementById('title').value;
-    let input_web_name= document.getElementById('web_name').value;
-    let input_description= document.getElementById('description').value;
-    let input_date= document.getElementById('date').value;
-    
-    let d2= new create_articles_data(input_url,input_title,input_web_name,input_description,input_date);
-    
-    art_data.push(d2);
-    localStorage.setItem('Articles_Data',JSON.stringify(art_data));
-    
-    location.reload();
- }
-
- 
-art_data=JSON.parse(localStorage.getItem('Articles_Data'));
-console.log(art_data)
-
-
-
- //<--------------------------------------------------------------------------------------------------->
-
-
-
-
- 
-
+art_data_hard_coded.forEach((el,i,event)=>{
+    create_cards(el,i,event)
+})
 // <------------------------------------------------------pagination--------------------------------->
 const createBtn = (btn_container) => {
 
@@ -77,12 +45,14 @@ createBtn(btn_container);
 
 
 //<-------------------------------------------------------appending------------------------------------------->
-art_data.forEach((el)=>{
-    create_cards(el)
+let art_data=JSON.parse(localStorage.getItem('Articles_Data'));
+
+art_data.forEach((el,i,event)=>{
+    create_cards(el,i,event)
 })
 
 
-function create_cards(el){
+function create_cards(el,i){
 
     let wrap= document.createElement('div');
         wrap.className='wrap';
@@ -94,7 +64,7 @@ function create_cards(el){
         div1.append(image);
 
     let div2=document.createElement('div');
-
+``
         let div2_1=document.createElement('div');
     
 
@@ -116,14 +86,29 @@ function create_cards(el){
             let date=document.createElement('p');
                 date.innerText=el.date;
 
-                div2_2.append(viewVideo, date);
+            let btn= document.createElement('button');
+                btn.innerText='Remove';
+                btn.addEventListener('click', function(){
+                    
+                    remove(i)
+                });
+
+                div2_2.append(viewVideo, date,btn);
                 div2.append(div2_1,div2_2);
+
+        
 
     wrap.append(div1,div2);
     document.getElementById('art_container').append(wrap);
 }
 
-
 //<--------------------------------------------------------------------------------------------------------------->
 
+function remove(i){
+    let art_data=JSON.parse(localStorage.getItem('Articles_Data'));
+        art_data.splice(i,1);
 
+        localStorage.setItem('Articles_Data',JSON.stringify(art_data))
+        location.reload()
+    
+}
