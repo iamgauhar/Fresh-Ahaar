@@ -80,3 +80,51 @@ document.getElementById("logind").addEventListener("click", ()=>{
 
 //     user.signUP(name, email, username, password)
 // })
+let loggedUser = JSON.parse(localStorage.getItem("logged"))
+if(loggedUser){
+    document.getElementById("signup").innerHTML = loggedUser
+    document.getElementById("signup").href="./createArticles.html"
+
+}else{
+document.getElementById("signup").innerHTML = "Sign Up"
+
+}
+
+
+let userBase = JSON.parse(localStorage.getItem("userInfo")) || []
+
+
+
+document.getElementById("login_btn").addEventListener("click", (e)=>{
+    e.preventDefault()
+
+    let name = document.getElementById("username").value
+    let pass = document.getElementById("password").value
+
+    userBase.forEach(el => {
+
+        if(name == el.username && pass== el.password){
+            alert("Login Success \n You will be redirect Post publishing page")
+
+            let profille = el.name
+           
+
+            localStorage.setItem("logged", JSON.stringify(profille))
+            location.href="./createArticles.html"
+            
+            document.getElementById("member_login").style.top="-50%"
+
+            return true
+        }
+        
+    });
+    // alert("Login Unsuccess")
+    return false
+})
+
+
+
+document.getElementById("logout").addEventListener("click", ()=>{
+    localStorage.removeItem("logged")
+    location.href="./index.html"
+})

@@ -59,6 +59,7 @@ nav>a:nth-child(6){
 
 
 #art_container{
+    padding: 2rem 0;
     width: 80%;
     /* height: 600px; */
     border: 0px solid black;
