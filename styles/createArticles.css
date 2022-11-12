@@ -1,0 +1,28 @@
+#create_articles_data{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 30%;
+    height: 400px;
+    border: 0px solid green;
+    margin-left: 35%;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 2%;
+}
+
+#create_articles_data>div>input{
+    width: 70%;
+    height: 25px;
+    border: 1px solid green;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+#post{
+    margin-left: 27%;
+}
+#create{
+    width: 20%;
+    height: 25px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
