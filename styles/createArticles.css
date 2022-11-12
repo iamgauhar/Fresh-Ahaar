@@ -2,7 +2,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     width: 30%;
-    height: 400px;
+    height: 500px;
     border: 0px solid green;
     margin-left: 35%;
     margin-top: 2%;
@@ -10,9 +10,16 @@
     margin-bottom: 2%;
 }
 
-#create_articles_data>div>input{
+#url,#title,#web_name,#description,#date{
     width: 70%;
     height: 25px;
+    border: 1px solid green;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+#articles{
+    width: 70%;
+    height: 100px;
     border: 1px solid green;
     margin-left: 15%;
     margin-top: 5%;

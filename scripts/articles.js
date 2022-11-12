@@ -6,20 +6,44 @@ let art_data_hard_coded=[
         'web_name':'by KindMeal.my',
         'description':'Peri Peri Tornado Potato — a fantastic, fun, tasty way to cook potatoes!',
         'date':'11:nov:2022',
+        
+        "articles":`Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, 
+            repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our 
+            bodies need to function.
+            The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determine 
+            the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric 
+            intake for a child aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls 
+            needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000.`
     },
     {
         "url": "https://www.kindmeal.my/photos/article/20/20206-l.jpg",
         "title": " Satay Stir Fry",
         "web_name": "by KindMeal.my",
         "description": "Whip up this delicious satay stir fry — quick, protein-packed with delicious peanutty umami flavour!",
-        "date": "02 November 2022"
+        "date": "02 November 2022",
+        
+        "articles":`Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, 
+            repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our 
+            bodies need to function.
+            The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determine 
+            the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric 
+            intake for a child aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls 
+            needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000.`
     },
     {
         "url": "https://www.kindmeal.my/photos/article/20/20204-l.jpg",
         "title": "",
         "web_name": "by Compassion Over Killing",
         "description": "Happy Halloween 👻 Read our newest blog on whether of not the potions from Halloween classic Hocus Pocus are vegan. Plus a list of some great vegan candies and treats:",
-        "date": "01 November 2022"
+        "date": "01 November 2022",
+
+        "articles":`Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, 
+            repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our 
+            bodies need to function.
+            The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determine 
+            the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric 
+            intake for a child aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls 
+            needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000.`
     }
 ]
 
@@ -64,7 +88,7 @@ function create_cards(el,i){
         div1.append(image);
 
     let div2=document.createElement('div');
-``
+
         let div2_1=document.createElement('div');
     
 
@@ -82,7 +106,10 @@ function create_cards(el,i){
         let div2_2=document.createElement('div');
             let viewVideo=document.createElement('div');
                 viewVideo.className='viewVideo';
-                viewVideo.innerText='View Videos';
+                viewVideo.innerText='View Articles';
+                viewVideo.onclick=()=>{
+                    location.href='readArticles.html'
+                }
             let date=document.createElement('p');
                 date.innerText=el.date;
 
