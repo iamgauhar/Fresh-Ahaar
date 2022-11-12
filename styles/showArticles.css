@@ -1,0 +1,52 @@
+
+
+#art_top{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    
+    
+}
+#art_top>div{
+    width: 80%;
+    height: 200px;
+    border: 0px solid black;
+    margin-left: 10%;
+}
+#sa_container{
+    width: 80%;
+    height: 1200px;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+#lhs{
+    width: 70%;
+    height: 90%;
+    border: 1px solid black;
+    text-align:center;
+}
+
+#rhs{
+    width: 22%;
+    height: 100%;
+    border: 1px solid black;
+}
+#img_container{
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+}
+#img_container>img{
+    width: 100%;
+    height: 100%;
+}
+#article_container{
+    width: 100%;
+    height: 47%;
+    border: 1px solid red;
+}

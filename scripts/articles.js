@@ -6,20 +6,31 @@ let art_data_hard_coded=[
         'web_name':'by KindMeal.my',
         'description':'Peri Peri Tornado Potato — a fantastic, fun, tasty way to cook potatoes!',
         'date':'11:nov:2022',
+        "article":"No article available !"
     },
     {
         "url": "https://www.kindmeal.my/photos/article/20/20206-l.jpg",
         "title": " Satay Stir Fry",
         "web_name": "by KindMeal.my",
         "description": "Whip up this delicious satay stir fry — quick, protein-packed with delicious peanutty umami flavour!",
-        "date": "02 November 2022"
+        "date": "02 November 2022",
+        "article":"No article available !"
     },
     {
         "url": "https://www.kindmeal.my/photos/article/20/20204-l.jpg",
         "title": "",
         "web_name": "by Compassion Over Killing",
         "description": "Happy Halloween 👻 Read our newest blog on whether of not the potions from Halloween classic Hocus Pocus are vegan. Plus a list of some great vegan candies and treats:",
-        "date": "01 November 2022"
+        "date": "01 November 2022",
+        "article":"No article available !"
+    },
+    {
+        "url": "https://www.kindmeal.my/photos/article/20/20240-l.jpg",
+        "title": " Turkeys: Leave Them Off Your Plate And In The Wild | Animal Outlook",
+        "web_name": "by Compassion Over Killing,",
+        "description": "#Turkeys are smart, sensitive and curious birds. Sadly, nearly 230 million are slaughtered each year — around 46 million for Thanksgiving alone. Learn more about turkeys:",
+        "date": "12 November 2022",
+        "article": "Why we should leave these personality-filled birds in the wild and off our plates Turkeys are smart, sensitive and curious birds. Sadly, nearly 300 million are slaughtered each year — around 46 million for Thanksgiving alone. In the wild, a turkey can live up to 12 years. Turkeys bred for meat rarely live past the age of five months, and never see beyond the horrific conditions of factory farms and hatcheries like the ones we’ve investigated — Hargin Inc., Foster Farms and Goldsboro Milling Company. Sick or injured chicks seldom live past their first day; workers throw them in grinders or gas them in plastic bags.  Like chickens, these facilities selectively breed most farmed turkeys to produce the most meat in the shortest period of time using the least amount of feed."
     }
 ]
 
@@ -82,14 +93,18 @@ function create_cards(el,i){
         let div2_2=document.createElement('div');
             let viewVideo=document.createElement('div');
                 viewVideo.className='viewVideo';
-                viewVideo.innerText='View Videos';
+                viewVideo.innerText='View Aricles';
+                viewVideo.onclick=()=>{
+                    localStorage.setItem('read_articles',JSON.stringify(el));
+                    location.href='showArticles.html'
+                }
             let date=document.createElement('p');
                 date.innerText=el.date;
 
             let btn= document.createElement('button');
                 btn.innerText='Remove';
                 btn.addEventListener('click', function(){
-                    
+                   
                     remove(i)
                 });
 

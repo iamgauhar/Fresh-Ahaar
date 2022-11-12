@@ -119,6 +119,10 @@
     align-items: center;
 
 }
+.viewVideo:hover{
+    cursor: pointer;
+    background-color: green;
+}
 
 .art_img{
     width: 100%;
