@@ -101,14 +101,7 @@ function create_cards(el,i){
             let date=document.createElement('p');
                 date.innerText=el.date;
 
-            let btn= document.createElement('button');
-                btn.innerText='Remove';
-                btn.addEventListener('click', function(){
-                   
-                    remove(i)
-                });
-
-                div2_2.append(viewVideo, date,btn);
+                div2_2.append(viewVideo, date);
                 div2.append(div2_1,div2_2);
 
         
@@ -119,11 +112,11 @@ function create_cards(el,i){
 
 //<--------------------------------------------------------------------------------------------------------------->
 
-function remove(i){
-    let art_data=JSON.parse(localStorage.getItem('Articles_Data'));
-        art_data.splice(i,1);
+// function remove(i){
+//     let art_data=JSON.parse(localStorage.getItem('Articles_Data'));
+//         art_data.splice(i,1);
 
-        localStorage.setItem('Articles_Data',JSON.stringify(art_data))
-        location.reload()
+//         localStorage.setItem('Articles_Data',JSON.stringify(art_data))
+//         location.reload()
     
-}
+// }
