@@ -18,8 +18,8 @@ function header(){
         <a href="kindMoments.html"><div id='go_to_kindMoments'>Kind Moments</div></a>
         <a href="#"><div>Hot Picks</div></a>
         <a href="#"><div>Directory</div></a>
-        <a href="#"><div>Articles</div></a>
-        <a href="#"><div>Help</div></a>
+        <a href="articles.html "><div>Articles</div></a>
+        <a href="help.html"><div>Help</div></a>
     
 </nav>
 
