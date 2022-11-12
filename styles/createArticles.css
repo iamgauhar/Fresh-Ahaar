@@ -26,3 +26,10 @@
     margin-left: 40%;
     margin-top: 5%;
 }
+
+#logout{
+    padding: .7rem;
+    float: right;
+    margin: 1rem 4rem;
+    cursor: pointer;
+}
