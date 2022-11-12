@@ -1,11 +1,11 @@
 
 
 
-let read_articles= JSON.parse(localStorage.getItem('read_articles'));
+let read_articles= JSON.parse(localStorage.getItem('Articles_Data'));
 
+console.log(read_articles)
 
-
-const appendData= ({url,title,web_name,description,date,article})=>{
+const appendData= ({url,title,web_name,description,date,articles})=>{
 
     let img_container=document.getElementById('img_container');
         let img=document.createElement('img');
@@ -18,7 +18,7 @@ const appendData= ({url,title,web_name,description,date,article})=>{
             h2.innerText=title;
 
         let p=document.createElement('p');
-            p.innerText=article;
+            p.innerText=articles;
 
         let aurther_name=document.createElement('p');
             aurther_name.innerText=web_name;
@@ -29,4 +29,3 @@ const appendData= ({url,title,web_name,description,date,article})=>{
         article_container.append(h2,p,aurther_name,p3)
 }
 
-appendData(read_articles)

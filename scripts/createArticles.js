@@ -8,13 +8,13 @@ class create_articles_data{
         this.web_name=web_name;
         this.description=description;
         this.date=date;
-        this.artticles=input_articles;
+        this.articles=input_articles;
     }
  }
 
 
 
-  art_data =JSON.parse(localStorage.getItem('Articles_Data')) || []
+  art_data =JSON.parse(localStorage.getItem('Create_Articles_Data')) || []
 
  document.getElementById('create').onclick=() =>{
     let input_url= document.getElementById('url').value;
@@ -27,7 +27,7 @@ class create_articles_data{
     let d2= new create_articles_data(input_url,input_title,input_web_name,input_description,input_date,input_articles);
     
     art_data.push(d2);
-    localStorage.setItem('Articles_Data',JSON.stringify(art_data));
+    localStorage.setItem('Create_Articles_Data',JSON.stringify(art_data));
     
     location.reload();    
     alert('Your Post is Generated Successfully')

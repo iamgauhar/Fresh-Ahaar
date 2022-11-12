@@ -31,19 +31,21 @@ let art_data_hard_coded=[
             needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000.`
     },
     {
+        "url": "https://www.kindmeal.my/photos/article/20/20238-l.jpg",
+        "title": "Have You Ever Wondered Why You Hear So Much About Cruelty In Animal Agriculture ..",
+        "web_name": "by Animal Equality",
+        "description": "Have you ever wondered why you hear so much about cruelty in animal agriculture but rarely hear about justice for this abuse ?",
+        "date": "12 November 2022",
+        "articles": " In the UK, there are over 180 taxpayer-funded bodies responsible for overseeing animal welfare on farms. However, only one inspector is assigned to every 205 farms. That number is likely to be even less in practice, as this includes part-time workers and those with farm welfare duties as a part of a wider role.  In addition to a lack of inspections, there is a severe lack of enforcement when animal welfare violations occur. Based on data collected directly from the responsible entities only half of the complaints they received in recent years were followed up with an inspection.   Of those inspected, illegalities were found in approximately one-third of cases. Only one in 300 farms were prosecuted following the initial complaint.  As The Guardian reported, “even when investigations by animal protection organizations such as Animal Equality, Animal Aid, Compassion in World Farming and Open Cages uncovered alleged evidence of illegal activity or substandard practices, more often than not it went unpunished.”  Across 65 investigation releases by animal protection organizations, including Animal Equality, from 2016 to 2021, illegal activity or poor practices were discovered in every facility. Yet there was no formal enforcement action taken in over 60% of cases, to our knowledge.  Non-compliance is endemic, evidenced time and again through undercover investigations and now further bolstered by the data revealed in this report. Pigs are having their tails cut off, cows are unable to walk or stand and hens are crammed into overcrowded cages, yet farms are typically receiving little more than a slap on the wrist. These findings are disturbing and should be alarming to any consumer. Animal abusers need to truly be held accountable.  -Abigail Penny, Executive Director for Animal Equality UK"
+    },
+    {
         "url": "https://www.kindmeal.my/photos/article/20/20204-l.jpg",
-        "title": "",
+        "title": `Vegan Potions - Animal Outlook`,
         "web_name": "by Compassion Over Killing",
         "description": "Happy Halloween 👻 Read our newest blog on whether of not the potions from Halloween classic Hocus Pocus are vegan. Plus a list of some great vegan candies and treats:",
         "date": "01 November 2022",
 
-        "articles":`Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, 
-            repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our 
-            bodies need to function.
-            The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determine 
-            the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric 
-            intake for a child aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls 
-            needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000.`
+        "articles":"Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our  bodies need to function. The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determin the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric intake for a child aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls needing the fewest calories and active boys needing the most. For adults, this can range from 1,800 to about 3,000"
     }
 ]
 
@@ -69,7 +71,7 @@ createBtn(btn_container);
 
 
 //<-------------------------------------------------------appending------------------------------------------->
-let art_data=JSON.parse(localStorage.getItem('Articles_Data'));
+let art_data=JSON.parse(localStorage.getItem('Create_Articles_Data'));
 
 art_data.forEach((el,i,event)=>{
     create_cards(el,i,event)
@@ -107,8 +109,11 @@ function create_cards(el,i){
             let viewVideo=document.createElement('div');
                 viewVideo.className='viewVideo';
                 viewVideo.innerText='View Articles';
+
                 viewVideo.onclick=()=>{
+
                     location.href='readArticles.html'
+                    localStorage.setItem('Articles_Data',JSON.stringify(el));
                 }
             let date=document.createElement('p');
                 date.innerText=el.date;
