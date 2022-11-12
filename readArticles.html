@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show Articles</title>
+    <title>Read Articles</title>
     <link rel="stylesheet" href="./styles/readArticles.css">
     <link rel="stylesheet" href="./styles/navbar.css">
 </head>
-<body>
+<body onload="appendData(read_articles)">
     <header></header>
     <div id="art_top">
         <div>
@@ -27,24 +27,31 @@
         <div id="lhs">
             <div id="img_container"></div>
 
-            <div>
+            <div id="fb">
                 <img src="https://www.kindmeal.my/images/share_facebook.png" alt="">
                 <img src="https://www.kindmeal.my/images/share_twitter.png" alt="">
             </div>
 
             <div id="article_container"></div>
             
-            <button> Back To Articles</button>
+            <div><a href="articles.html"><button id="view_btn"> View Full Article</button></a></div>
+            <div><a href="articles.html"><button id="articles_btn"> Back To Articles</button></a></div>
+            
         </div>
 
         
 
 
         <div id="rhs">
+            <h2>More Yummy Articles</h2>
             <div></div>
+            <p>When you get rescued from an egg farm, and finally..</p>
             <div></div>
+            <p>Cows: Nine Facts About Cows That May Surprise You ..</p>
             <div></div>
+            <p>What Do Animals See In A Mirror? - Issue 47: Consc..</p>
             <div></div>
+            <p>Incredible! Animal Equality, along with the other ..</p>
         </div>
     </div>
 
