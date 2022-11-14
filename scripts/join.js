@@ -20,6 +20,7 @@ document.getElementById("register_btn").addEventListener("click", (e)=>{
     localStorage.setItem("userInfo", JSON.stringify(userBase))
     document.getElementById("reg_form").reset()
     alert("Sign Up successful \n Login Now")
-    document.getElementById("member_login").style.top="50%"
+    location.reload()
+    // document.getElementById("member_login").style.top="50%"
 
 })
