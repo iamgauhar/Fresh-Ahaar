@@ -110,7 +110,7 @@ document.getElementById("login_btn").addEventListener("click", (e)=>{
            
 
             localStorage.setItem("logged", JSON.stringify(profille))
-            location.href="./createArticles.html"
+            location.href="./index.html"
             
             document.getElementById("member_login").style.top="-50%"
 
