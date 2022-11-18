@@ -16,6 +16,7 @@
     border: 1px solid green;
     margin-left: 15%;
     margin-top: 5%;
+    padding:1px 4px;
 }
 #articles{
     width: 70%;
@@ -23,6 +24,7 @@
     border: 1px solid green;
     margin-left: 15%;
     margin-top: 5%;
+    padding: 4px;
 }
 #post{
     margin-left: 27%;

@@ -76,7 +76,7 @@ function header(){
                 <div><h3>Member Login</h3></div>
                 <form action="">
                     <input type="text" name="username" id="username" placeholder="username">
-                    <input type="text" name="password" id="password" placeholder="Your Password">
+                    <input type="password" name="password" id="password" placeholder="Your Password">
                     <button id="login_btn">Login</button>
                 </form>
                 <div>

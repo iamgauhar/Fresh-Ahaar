@@ -3,10 +3,7 @@ import { header, footer } from "../components/utility.js";
 document.querySelector("header").innerHTML = header()
 document.querySelector("footer").innerHTML = footer()
 
-document.getElementById("signup").addEventListener("click", ()=>{
-    document.getElementById("login_form").style.left="50%"
 
-})
 document.getElementById("not_member").addEventListener("click", ()=>{
     document.getElementById("login_form").style.left="50%"
     document.getElementById("member_login").style.top="-50%"
@@ -87,6 +84,10 @@ if(loggedUser){
 
 }else{
 document.getElementById("signup").innerHTML = "Sign Up"
+document.getElementById("signup").addEventListener("click", ()=>{
+    document.getElementById("login_form").style.left="50%"
+
+})
 
 }
 
@@ -104,7 +105,7 @@ document.getElementById("login_btn").addEventListener("click", (e)=>{
     userBase.forEach(el => {
 
         if(name == el.username && pass== el.password){
-            alert("Login Success \n You will be redirect Post publishing page")
+            alert("Login Successful")
 
             let profille = el.name
            
